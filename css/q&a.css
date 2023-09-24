@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+.mv {
+	text-align: center;
+	margin: 105px 0 80px;
+}
+
+.question {
+	margin-bottom: 100px;
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	display: flex;
+	line-height: 1.4;
+	margin-bottom: 70px;
+}
+
+h2::before,
+h2::after {
+	content: "";
+	flex-grow: 1;
+	height: 1px;
+	background: #c1a073;
+	display: block;
+	margin-top: 20px;
+}
+
+h2::before {
+	margin-right: .4em;
+}
+
+h2::after {
+	margin-left: .4em;
+}
+
+.section_ttl-img {
+	text-align: center;
+}
+
+dl div {
+	border-radius: 10px;
+	border: 1px solid #c1a073;
+	max-width: 805px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	padding: 5px 40px 25px 30px;
+}
+
+dl dt::before {
+	content: "";
+	background: url(../q&a/images/round_q.png) no-repeat;
+	padding-right: 1.6em;
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	transform: translateY(15px);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.question dl dd::before {
+	content: "";
+	background: url(../q&a/images/round_a.png) no-repeat;
+	padding-right: 1.6em;
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	transform: translateY(15px);
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+
+.question dl dt {
+	position: relative;
+	padding-left: 65px;
+	padding-top: 28px;
+}
+
+.question dl dd {
+	position: relative;
+	padding-left: 65px;
+	padding-top: 28px;
+}
+
+div:first-of-type dd {
+	padding-top: 18px;
+}
+
+.access {
+	background-color: #f6f1ea;
+	padding: 30px 0 30px;
+	margin-bottom: 230px;
+	background-image: url(../q&a/images/illust_walk.png);
+	background-position: bottom right 50px;
+	background-repeat: no-repeat;
+
+}
+
+.access h2 {
+	padding-bottom: 50px;
+}
+
+.access .flex {
+	padding-right: 130px;
+}
+
+.access address p {
+	margin-bottom: 25px;
+	padding-left: 20px;
+}
+
+.access address {
+	margin-top: 10px;
+	font-style: normal;
+
+}
+
+.access address p:first-of-type {
+	font-size: 24px;
+	background: linear-gradient(transparent 70%, #ff8f2c 60%);
+	line-height: 1.2;
+	width: 68%;
+	padding-left: 18px;
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+	section .flex {
+		display: block;
+	}
+
+	.mv img {
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.question dl {
+		padding: 0 10px;
+	}
+
+	.access .flex {
+		padding: 0 10px;
+	}
+
+	iframe {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	.access {
+		background-size: 25%;
+		background-position: bottom right 10px;
+		background-repeat: no-repeat;
+
+	}
+
+
+}

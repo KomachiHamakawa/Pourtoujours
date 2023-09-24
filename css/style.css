@@ -1,0 +1,272 @@
+.mv {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.mv::after {
+    content: url(../images/flower01.png);
+    display: block;
+    width: 110px;
+    position: absolute;
+    bottom: -147px;
+    right: 10%;
+    transform: rotate(180deg);
+}
+
+.mv::before {
+    content: url(../images/flower02.png);
+    display: block;
+    width: 110px;
+    position: absolute;
+    bottom: -121px;
+    left: 10%;
+}
+
+.mv_catch {
+    position: absolute;
+    font-size: 24px;
+    color: #fff;
+    top: 60%;
+    left: 65%;
+    z-index: 40;
+}
+
+
+.slider {
+    position: relative;
+    z-index: 1;
+    /*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+    height: 100vh;
+    /*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+}
+
+/*　背景画像設定　*/
+
+.slider-item01 {
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/store_slide05.jpg);
+}
+
+.slider-item02 {
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/store_slide04.jpg);
+}
+
+.slider-item03 {
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/store_slide03.png);
+}
+
+.slider-item04 {
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/store_slide01.jpg);
+}
+
+
+.slider-item {
+    width: 100%;
+    /*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+    height: 100vh;
+    /*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+    background-repeat: no-repeat;
+    /*背景画像をリピートしない*/
+    background-position: center;
+    /*背景画像の位置を中央に*/
+    background-size: cover;
+    /*背景画像が.slider-item全体を覆い表示*/
+}
+
+#wrapper {
+    margin-bottom: 150px;
+}
+
+.slick-dots li {
+    display: inline-block;
+}
+
+.slick-dots button {
+    color: transparent;
+}
+
+section {
+    padding: 0 150px 100px;
+}
+
+section:nth-child(2) {
+    background-color: #f6f1ea;
+    position: relative;
+    padding: 120px 150px 100px;
+}
+
+
+section .flex {
+    justify-content: space-around;
+}
+
+.section_ttl-img {
+    text-align: center;
+}
+
+.scroll_up {
+    transition:.8s ease-in-out;
+    transform: translateY(40px);
+    opacity: 0;
+}
+
+.scroll_up.on {
+    transform: translateY(0);
+    opacity: 1.0;
+}
+
+h3 {
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3:before,
+h3:after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: #444;
+    display: block;
+    margin-top: 16px;
+}
+
+h3:before {
+    margin-right: .7em;
+}
+
+h3:after {
+    margin-left: .7em;
+}
+
+.section02.flex {
+    flex-direction: row-reverse;
+}
+
+h4 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+span {
+    font-size: 24px;
+    background: linear-gradient(transparent 60%, #ff8f2c 60%);
+}
+
+
+.section_content-txt {
+    width: 50%;
+}
+
+.section_content-txt p {
+    margin-bottom: 30px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+.yoko {
+    background-color: #c1a073;
+    position: absolute;
+    bottom: -25%;
+    left: 0;
+    width: 55%;
+    border-radius: 0 20px 20px 0;
+    padding: 30px 0px 50px 200px;
+}
+
+.yoko_contents {
+    position: relative;
+}
+
+.yoko_img-wrap {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    width: 30%;
+}
+
+.yoko_img-wrap img {
+    width: 100%;
+}
+
+
+h5 {
+    font-size: 1.5em;
+    margin-bottom: 55px;
+}
+
+.footer {
+    margin-top: 450px;
+}
+
+@media screen and (max-width: 768px) {
+    .mv_catch {
+        font-size: 17px;
+        transform: translate(-50%, -50%);
+    }
+    .mv_catch p{
+        font-size: 13px;
+    }
+
+    section {
+        padding: 0 20px 100px;
+    }
+
+    .section01,
+    .section02.flex {
+        flex-direction: column;
+    }
+
+    .section_content-txt {
+        width: 100%;
+    }
+
+    .section_img-wrap {
+        margin: auto;
+    }
+
+    section:nth-child(2) {
+        padding: 120px 20px 100px;
+    }
+
+    .yoko {
+        background-color: #c1a073;
+        bottom: -25%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 20px 20px 20px 20px;
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .yoko_img-wrap {
+        position: absolute;
+        top: -45%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 55%;
+    }
+
+    .yoko_img-wrap img {
+        width: 100%;
+    }
+
+    .yoko_contents {
+        padding: 20px;
+    }
+
+    .footer {
+        margin-top: 505px;
+    }
+
+
+}

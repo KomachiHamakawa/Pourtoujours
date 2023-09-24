@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+.mv {
+    text-align: center;
+    margin: 105px 0 80px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+section>p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+h2::before {
+    content: url(../order_cake/images/left_line.png);
+    padding-right: 0.2em;
+}
+
+h2::after {
+    content: url(../order_cake/images/right_line.png);
+    padding-left: 0.2em;
+}
+
+.reserve h2 {
+    margin-bottom: 50px;
+}
+
+.reserve {
+    padding: 0 30px 0 50px;
+    margin-bottom: 70px;
+}
+
+.reserve figure {
+    position: relative;
+}
+
+.reserve figure p {
+    position: absolute;
+    top: -65px;
+    left: 30%;
+}
+
+.reserve .text {
+    width: 60%;
+}
+
+.reserve h3 {
+    padding-bottom: 60px;
+}
+
+span {
+    background: linear-gradient(transparent 60%, #ff8f2c 60%);
+}
+
+.reserve.inner {
+    margin-bottom: 200px;
+}
+
+.reseven .text {
+    padding-bottom: 50px;
+}
+
+.reserve .text p:nth-of-type(2) {
+    font-size: 24px;
+}
+
+.reserve .text p:first-of-type {
+    padding-bottom: 50px;
+}
+
+.reserve span span {
+    font-size: 14px;
+}
+
+.reserve .text p:last-of-type {
+    font-size: 18px;
+}
+
+.order {
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.title p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 0.2;
+}
+
+.title {
+    position: absolute;
+    background-image: url(../order_cake/images/bg_title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 42%;
+    padding-top: 48px;
+    top: -118px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+}
+
+.order>div:last-of-type {
+    background-color: #dac6ab;
+    padding: 120px 30px 90px;
+}
+
+.order .flex {
+    justify-content: center;
+}
+
+.order .box {
+    width: 255px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    padding: 75px 30px;
+}
+
+.order .box .step {
+    position: absolute;
+    top: -50px;
+    right: 5px;
+}
+
+.order h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.order .box p {
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.order .box:first-of-type {
+    background-image: url(../order_cake/images/photo03.png);
+    background-repeat: no-repeat;
+    background-position: bottom 10px right 10px;
+}
+
+.order .box:nth-of-type(2) {
+    background-image: url(../order_cake/images/photo04.png);
+    background-repeat: no-repeat;
+    background-position: bottom 10px right 10px;
+}
+
+.order .box:last-of-type {
+    background-image: url(../order_cake/images/photo05.png);
+    background-repeat: no-repeat;
+    background-position: bottom 10px right 10px;
+}
+
+.order .arrow {
+    background-image: url(../order_cake/images/arrow.png);
+    background-repeat: no-repeat;
+    width: 97px;
+    line-height: 0;
+    color: transparent;
+    font-size: 0;
+    background-position: top 50% left 50%;
+}
+
+.select {
+    margin-bottom: 170px;
+    padding: 0 35px 20px 90px;
+}
+
+.select h2 {
+    margin-bottom: 70px;
+}
+
+.select h3 {
+    margin-bottom: 50px;
+    padding-top: 40px;
+}
+
+.select .flex p:nth-of-type(2) {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.cakes {
+    position: relative;
+    margin-bottom: 215px;
+}
+
+
+.cakes>div:last-of-type {
+    background-color: #dac6ab;
+    padding: 90px 0;
+}
+
+.cakes .flex {
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    section .flex {
+        display: block;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+
+    h2 {
+        font-size: 34px;
+        line-height: 0.8;
+    }
+
+    section>p {
+        font-size: 16px;
+        line-height: 0.1;
+    }
+
+    .reserve {
+        padding: 0;
+        text-align: center;
+    }
+
+    .reserve h2 {
+        margin-bottom: 100px;
+    }
+
+    .reserve figure {
+        margin-bottom: 50px;
+    }
+
+    .reserve .text {
+        width: 100%;
+        text-align: left;
+        padding: 0 10px 0 20px;
+    }
+
+    .title {
+        background-image: none;
+        width: 100%;
+    }
+
+    .title p {
+        font-size: 16px;
+        line-height: 0.1;
+    }
+
+    .order .box {
+        margin: 0 auto 100px;
+        width: auto;
+    }
+
+    .order .arrow {
+        display: none;
+    }
+
+    .select {
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    .select h2 {
+        margin-bottom: 0;
+    }
+
+    .select .flex div {
+        text-align: left;
+        padding: 0 10px 0 20px;
+    }
+
+    .select .flex p:last-of-type {
+        margin-bottom: 80px;
+    }
+
+    .cakes .flex p {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .cakes {
+        margin-bottom: 250px;
+    }
+
+    .cakes>div:last-of-type {
+        background-color: #dac6ab;
+        padding: 50px 0;
+    }
+
+}

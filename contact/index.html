@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせ | Pour toujours</title>
+
+  <meta name="keywords" content="Pour Toujuors, ペット同伴, カフェ, 吉祥寺">
+  <meta name="description" content="Pour Toujuorsの公式ホームページです。">
+  <meta name="viewport" content="width=device-width">
+  <meta name="format-detection" content="telephone=no">
+
+
+
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/script.js"></script>
+</head>
+
+
+<body>
+  <header>
+    <div class="inner flex">
+      <h1 class="logo">
+        <a href="../index.html">
+          <img src="../images/logo.png" alt="Pour toujours">
+        </a>
+      </h1>
+      <nav>
+        <ul class="pc flex">
+          <li><a href="../menu/index.html">メニュー</a></li>
+          <li><a href="../order_cake/index.html">オーダーケーキ</a></li>
+          <li><a href="../store/index.html">店内のようす</a></li>
+          <li><a href="../q&a/index.html">Q&A・アクセス</a></li>
+          <li><a href="index.html">お問い合わせ</a></li>
+        </ul>
+        <ul class="sp">
+          <li><a href="../menu/index.html">メニュー</a></li>
+          <li><a href="../order_cake/index.html">オーダーケーキ</a></li>
+          <li><a href="../store/index.html">店内のようす</a></li>
+          <li><a href="../q&a/index.html">Q&A・アクセス</a></li>
+          <li><a href="index.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="openbtn"><span></span><span></span><span></span></div>
+  </header>
+
+  <div class="mv"><img src="images/contact_vis.png" alt="お問い合わせ"></div>
+
+  <main>
+    <section class="bg">
+
+      <div class="section_ttl-img"><img src="images/contact.png" alt="contact"></div>
+      <h2>お問い合わせ内容入力</h2>
+
+      <div class="inner">
+        <p>お問い合わせ内容をご記入ください。<span>*</span>は必須項目です。必ず入力ください。</p>
+        <form action="program.php" method="post">
+          <dl>
+            <dt>お名前<span>*</span></dt>
+            <dd id="nameSection">
+              <input type="text" name="name" id="name">
+              <p class="alert">漢字でご記入ください</p>
+            </dd>
+
+            <dt>お名前（ｶﾅ）</dt>
+            <dd>
+              <input type="text" name="kana">
+              <p class="alert">全角カタカナでご記入ください</p>
+            </dd>
+
+            <dt>メールアドレス<span>*</span></dt>
+            <dd id="emailSection">
+              <input type="email" name="email" id="email">
+              <p class="alert">半角英数字でご記入ください</p>
+            </dd>
+
+            <dt>電話番号<span>*</span></dt>
+            <dd id="telSection">
+              <input type="tel" name="tel" id="tel">
+              <p class="alert">半角英数字でご記入ください</p>
+            </dd>
+
+            <dt>お問い合わせ内容<span>*</span></dt>
+            <dd id="contentSection">
+              <textarea name="content" id="content"></textarea>
+              <p class="alert">お問い合わせ内容をご記入ください</p>
+            </dd>
+          </dl>
+          <p><input type="submit" value=""></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="inner">
+      <div class="flex">
+        <div>
+          <p class="logo">
+            <a href="index.html">
+              <img src="../images/logo.png" alt="Pour toujours">
+            </a>
+          </p>
+          <address>
+            <p>〒180-0005<br>
+              東京都吉祥寺武蔵野御殿山1丁目18-31<br>
+              TEL: 0123-45-6789</p>
+            <p>
+              営業時間：11:00~17:00 <br>
+              定休日：毎週水曜日
+            </p>
+          </address>
+        </div>
+
+        <div>
+          <ul class="footer_nav flex">
+            <li><a href="../menu/index.html">メニュー</a></li>
+            <li><a href="../order_cake/index.html">オーダーケーキ</a></li>
+            <li><a href="../store/index.html">店内のようす</a></li>
+            <li><a href="../q&a/index.html">Q&A・アクセス</a></li>
+            <li><a href="index.html">お問い合わせ</a></li>
+          </ul>
+          <div class="figure">
+            <figure>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="../images/icon_insta.png" alt="insta">
+              </a>
+            </figure>
+            <figure>
+              <a href="https://twitter.com/xjapanofficial?lang=ja" target="_blank" rel="noopener noreferrer">
+                <img src="../images/icon_twitter.png" alt="twitter">
+              </a>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <p class="copyright"><small>&copy; Pour toujours All right reserved.</small></p>
+    </div>
+  </footer>
+</body>
+
+</html>

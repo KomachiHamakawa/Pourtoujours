@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+img {
+	max-width: 100%;
+}
+
+h2 {
+	text-align: center;
+    margin: 105px 0 80px;
+}
+
+.slider {
+	position: relative;
+	z-index: 1;
+	/*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+	height: 100vh;
+	/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+}
+
+/*　背景画像設定　*/
+
+.slider-item01 {
+	background: url(../images/store_slide01.jpg);
+}
+
+.slider-item02 {
+	background: url(../images/store_slide02.png);
+}
+
+.slider-item03 {
+	background: url(../images/store_slide03.png);
+}
+
+.slider-item04 {
+	background: url(../images/store_slide04.jpg);
+}
+
+.slider-item05 {
+	background: url(../images/store_slide05.jpg);
+}
+
+.slider-item {
+	width: 100%;
+	/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+	height: 100vh;
+	/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+	background-repeat: no-repeat;
+	/*背景画像をリピートしない*/
+	background-position: center;
+	/*背景画像の位置を中央に*/
+	background-size: cover;
+	/*背景画像が.slider-item全体を覆い表示*/
+}
+
+#wrapper {
+	margin-bottom: 150px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+	position: absolute;
+	/*絶対配置にする*/
+	z-index: 3;
+	top: 42%;
+	cursor: pointer;
+	/*マウスカーソルを指マークに*/
+	outline: none;
+	/*クリックをしたら出てくる枠線を消す*/
+	border-top: 2px solid #fff;
+	/*矢印の色*/
+	border-right: 2px solid #fff;
+	/*矢印の色*/
+	height: 25px;
+	width: 25px;
+}
+
+.slick-prev {
+	/*戻る矢印の位置と形状*/
+	left: 2.5%;
+	transform: rotate(-135deg);
+}
+
+.slick-next {
+	/*次へ矢印の位置と形状*/
+	right: 2.5%;
+	transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+	position: relative;
+	z-index: 3;
+	text-align: center;
+	margin: -50px 0 0 0;
+}
+
+.slick-dots li {
+	display: inline-block;
+	margin: 0 5px;
+	padding-top: 80px;
+}
+
+.slick-dots button {
+	color: transparent;
+	border: none;
+	padding: 0;
+	outline: none;
+	width: 8px;
+	/*ドットボタンのサイズ*/
+	height: 8px;
+	/*ドットボタンのサイズ*/
+	display: block;
+	border-radius: 50%;
+	background: #e5d2af;
+	/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+	background: #ddc08e;
+	/*ドットボタンの現在地表示の色*/
+}
+
+
+.contents {
+	margin-bottom: 130px;
+}
+
+.content:nth-child(2n) {
+	flex-direction: row-reverse;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	margin-bottom: 100px;
+	gap: 50px;
+}
+
+.content_img{
+	width: 70%;
+}
+
+.content_img img {
+	height: 290px;
+}
+
+h3 {
+	display: inline-block;
+	font-size: 24px;
+	margin-bottom: 37px;
+	background: linear-gradient(transparent 60%, #ff8f2c 60%);
+}
+
+h3::before,
+h4::before {
+	content: url(../images/icon_slash01.png);
+}
+
+h3::after,
+h4::after {
+	content: url(../images/icon_slash02.png);
+}
+
+h4 {
+	line-height: 40px;
+	text-align: center;
+}
+
+.instagram {
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 33px;
+}
+
+a:hover{opacity:0.5;
+	transition:0.3s;
+}
+
+.instagram img {
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+.instagram_contents-wrap {
+	justify-content: space-evenly;
+	margin-bottom: 155px;
+}
+
+.insta_icon {
+	display: block;
+	height: 20px;
+}
+
+.box {
+	width: 28%;
+	padding: 7px 7px 40px 7px;
+	text-align: center;
+	border: 1px solid #eaeaea;
+	box-shadow: 0 0 2px 4px #e7e7e7;
+	/* background: linear-gradient(#fff 85%, #f0f0f0); */
+}
+
+.insta_txt {
+	font-size: 11px;
+	padding: 0 6px;
+	text-align: left;
+}
+
+.footer {
+	margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+	img{
+		object-fit: cover;
+	}
+
+	.contents{
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	.content,
+	.content:nth-child(2n) {
+		flex-direction: column;
+	}
+
+	.instagram_contents-wrap.flex {
+		flex-direction: column;
+	}
+
+	.box {
+		margin: 25px auto;
+		width: 65%;
+	}
+
+}
